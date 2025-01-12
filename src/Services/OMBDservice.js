@@ -3,7 +3,7 @@ import axios from "axios";
 const apiKey = "7bdba4cb";
 
 export const fetchMoviesByTitle = async (title) => {
-  const url = `http://www.omdbapi.com/?s=${title}&apikey=${apiKey}`;
+  const url = `https://www.omdbapi.com/?s=${title}&apikey=${apiKey}`;
   try {
     const response = await axios.get(url);
     if (response.data.Response === "True") {
