@@ -17,7 +17,7 @@ export const fetchMoviesByTitle = async (title) => {
 };
 
 export const fetchMovieDetails = async (imdbID) => {
-    const url = `http://www.omdbapi.com/?i=${imdbID}&apikey=${apiKey}`;
+    const url = `https://www.omdbapi.com/?i=${imdbID}&apikey=${apiKey}`;
     try {
       const response = await axios.get(url);
       if (response.data.Response === "True") {
