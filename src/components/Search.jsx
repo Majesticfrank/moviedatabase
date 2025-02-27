@@ -68,10 +68,8 @@ const Search =()=>{
     return (
       
       <div className="bg-gray-900 text-white min-h-screen p-6">
-         <h1 class="text-4xl font-bold text-yellow-500 text-center mt-10 hover:text-yellow-300 transition duration-300">
-    ROYAL TV
-  </h1>
-        <div className="max-w-lg mx-auto bg-gray-800 p-6 rounded-lg shadow-lg">
+        
+        <div className="">
           <SearchBar
             value={searchMovie}
             onChange={setSearchMovie}

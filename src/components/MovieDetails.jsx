@@ -17,7 +17,22 @@ const MovieDetails = ({ movie }) => {
         <p><strong>Director:</strong> {movie.Director}</p>
         <p><strong>Plot:</strong> {movie.Plot}</p>
         <p><strong>Rating:</strong> {movie.imdbRating}</p>
+
+
+
+<div className="mt-6">
+        <a 
+        href={movie.DownloadLink}
+        download={`${movie.Title}.mp4`}
+        type="video/mp4"
+        className="px-4 py-2 bg-yellow-500 text-white rounded hover:bg-blue-600 transition"
+>
+  Download {movie.Title}
+</a>
+</div>
       </div>
+      
+      
     </div>
   );
 };
